@@ -20,6 +20,11 @@ ul {
   margin-right: 50px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 li {
   list-style-type: none;
   margin: 0 20px;
@@ -41,7 +46,7 @@ li {
 }
 
 .home-section > .home-container > div {
-  background-color: #d8b5ff;
+  /* background-color: #d8b5ff; */
   height: 70vh;
   width: 50vw;
   margin: 20px;
@@ -119,7 +124,7 @@ li {
 }
 
 .skills-section > .skills-container > div {
-  background-color: #d8b5ff;
+  /* background-color: #d8b5ff; */
   height: 80vh;
   width: 50vw;
   margin: 10px;
@@ -150,50 +155,50 @@ li {
 .html-success {
   height: 3px;
   width: 70%;
-  background-color: green;
+  background-color: purple;
 }
 
 .css-success {
   height: 3px;
   width: 60%;
-  background-color: green;
+  background-color: purple;
 }
 
 .js-success {
   height: 3px;
   width: 50%;
-  background-color: green;
+  background-color: purple;
 }
 
 .react-success {
   height: 3px;
   width: 40%;
-  background-color: green;
+  background-color: purple;
 }
 
 .redux-success {
   height: 3px;
   width: 30%;
-  background-color: green;
+  background-color: purple;
 }
 
 .mui-success {
   height: 3px;
   width: 20%;
-  background-color: green;
+  background-color: purple;
 }
 
 .tailwind-success {
   height: 3px;
   width: 20%;
-  background-color: green;
+  background-color: purple;
 }
 
 /* Project Section */
 .project-section {
   background: #d8b5ff;
-  height: 98vh;
-  margin: 10px 0;
+  height: fit-content;
+  margin: 20px 0;
 }
 
 .project-section > .project-container > h1 {
@@ -209,17 +214,111 @@ li {
 }
 
 .project-boxes > .project {
-  height: 100px;
+  height: fit-content;
   background-color: #c6ea8d;
-  width: 200px;
-  margin: 20px;
+  width: fit-content;
+  margin: 50px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 20px 20px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.project-boxes > .project > img {
+  width: 300px;
+  height: 300px;
+  padding: 20px 50px 10px 50px;
+  display: block;
+  border-radius: 20%;
+}
+
+.project > .project-name {
+  font-size: 50px;
+}
+
+.project > .project-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.project-links > button:hover {
+  transform: scale(1.5);
+  transition: 0.5s ease-in-out;
+}
+
+.project-links > a:focus {
+  transform: translateY(2px);
 }
 
 /* Contact Section */
 .contact-section {
   background: #a9f1df;
   height: 98vh;
-  margin: 10px 0;
+  margin: -10px 0;
+}
+
+.contact-section > .contact-container {
+  display: flex;
+}
+
+.contact-section > .contact-container > div {
+  /* background-color: #d8b5ff; */
+  height: 88vh;
+  width: 50vw;
+  margin: 20px;
+}
+
+.contact-container > .contact-form {
+  padding: 0px 30px;
+}
+
+.contact-form > h1 {
+  font-size: 30px;
+}
+
+.contact-form > p {
+  font-size: 20px;
+}
+
+.form {
+  margin-top: 50px;
+}
+
+.form > div {
+  margin: 30px 0;
+}
+
+.form > div > label {
+  font-size: 20px;
+}
+
+.form > div > input,
+.form > div > textarea {
+  width: 600px;
+  /* height: 20px; */
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.form > div > button {
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #c6ea8d;
+}
+
+.form > div > button:active {
+  transform: translateY(2px);
+}
+
+.contact-details > div {
+  margin: 30px;
+}
+.contact-details > div > div {
+  margin: 20px;
 }
 
 /* Footer Section */

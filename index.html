@@ -7,18 +7,22 @@
     <title>Shivam Dhyani | Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
+    <!-- HEADER SECTION -->
     <header>
       <h1>Portfolio</h1>
       <ul>
-        <li>Home</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <a href="#"><li>Home</li></a>
+        <a href="#skills"> <li>Skills</li></a>
+        <a href="#projects"> <li>Projects</li></a>
+        <a href="#contact"><li>Contact</li></a>
       </ul>
     </header>
+
+    <!-- HOME SECTION -->
     <section class="home-section">
-      <h1>Home</h1>
+      <!-- <h1>Home</h1> -->
       <div class="home-container">
         <div class="profile-photo">
           <img src="/Images/Profile_Photo.png" alt="Profile Photo" />
@@ -47,8 +51,10 @@
         </div>
       </div>
     </section>
-    <section class="skills-section">
-      <h1>Skills</h1>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-section" id="skills">
+      <!-- <h1>Skills</h1> -->
       <div class="skills-container">
         <div class="skills-content">
           <h1>Skills</h1>
@@ -114,23 +120,137 @@
         </div>
       </div>
     </section>
-    <section class="project-section">
-      <h1>Projects</h1>
+
+    <!-- PROJECT SECTION -->
+    <section class="project-section" id="projects">
+      <!-- <h1>Projects</h1> -->
       <div class="project-container">
         <h1>Projects</h1>
         <div class="project-boxes">
-          <div class="project project-1"></div>
-          <div class="project project-2"></div>
-          <div class="project project-3"></div>
-          <div class="project project-4"></div>
-          <div class="project project-5"></div>
+          <div class="project project-1">
+            <img src="/Images/Registeration-Form-Project.png" alt="" />
+            <span class="project-name">Registeration Form</span>
+            <div class="project-links">
+              <a href="https://in.linkedin.com/" target="_blank">
+                <img src="/Images/github-sign.png" alt="" />
+              </a>
+              <a href="" target="_blank">
+                <img src="/Images/live-project-icon.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="project project-2">
+            <img src="/Images/Calculator-App-Project.png" alt="" />
+            <span class="project-name">Calculator App</span>
+            <div class="project-links">
+              <a href="https://in.linkedin.com/" target="_blank">
+                <img src="/Images/github-sign.png" alt="" />
+              </a>
+              <a href="" target="_blank">
+                <img src="/Images/live-project-icon.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="project project-3">
+            <img src="/Images/Todo-App-Project.png" alt="" />
+            <span class="project-name">ToDo App</span>
+            <div class="project-links">
+              <a href="https://in.linkedin.com/" target="_blank">
+                <img src="/Images/github-sign.png" alt="" />
+              </a>
+              <a href="" target="_blank">
+                <img src="/Images/live-project-icon.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="project project-4">
+            <img src="/Images/Random-Quote-Generator-Project.png" alt="" />
+            <span class="project-name">Quote Generator</span>
+            <div class="project-links">
+              <a href="https://in.linkedin.com/" target="_blank">
+                <img src="/Images/github-sign.png" alt="" />
+              </a>
+              <a href="" target="_blank">
+                <img src="/Images/live-project-icon.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="project project-5">
+            <img src="/Images/Shopping-Cart-Project.png" alt="" />
+            <span class="project-name">Shopping Cart App</span>
+            <div class="project-links">
+              <a href="https://in.linkedin.com/" target="_blank">
+                <img src="/Images/github-sign.png" alt="" />
+              </a>
+              <a href="" target="_blank">
+                <img src="/Images/live-project-icon.png" alt="" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="contact-section">
-      <h1>Contact</h1>
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <!-- <h1>Contact</h1> -->
+      <div class="contact-container">
+        <div class="contact-form">
+          <h1>Contact US</h1>
+          <p>
+            I am happy to answer any question you have or provide you an
+            extimate. Just send us a message in the form below with any question
+            you may have.
+          </p>
+          <div class="form">
+            <div>
+              <label for="">YOUR NAME</label>
+              <br />
+              <input type="text" name="" id="" />
+            </div>
+            <div>
+              <label for="">YOUR EMAIL</label>
+              <br />
+              <input type="text" name="" id="" />
+            </div>
+            <div>
+              <label for="">SUBJECT</label>
+              <br />
+              <input type="text" name="" id="" />
+            </div>
+            <div>
+              <label for="">YOUR MESSAGE</label>
+              <br />
+              <textarea name="" id="" cols="50" rows="15"></textarea>
+            </div>
+            <div>
+              <button type="submit">SEND</button>
+            </div>
+          </div>
+        </div>
+        <div class="contact-details">
+          <div>
+            <div>
+              <h2>EMAIL</h2>
+              <span>shivamdhyani@gmail.com</span>
+              <hr color="grey" />
+            </div>
+            <div>
+              <h2>PHONE</h2>
+              <span>+91 9898765463</span>
+              <hr color="grey" />
+            </div>
+            <div>
+              <h2>WEBSITE</h2>
+              <span>www.shivamdhyani.com</span>
+              <hr color="grey" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- FOOTER SECTION -->
     <footer>
       <h1>Portfolio</h1>
       <h4>Copyright 2023 Shivam Dhyani</h4>
