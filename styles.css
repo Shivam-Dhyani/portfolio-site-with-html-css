@@ -114,6 +114,7 @@ li {
   background: #c6ea8d;
   height: 98vh;
   margin: 10px 0;
+  padding-top: 70px;
 }
 
 .skills-section > .skills-container {
@@ -199,6 +200,7 @@ li {
   background: #d8b5ff;
   height: fit-content;
   margin: 20px 0;
+  padding-top: 80px;
 }
 
 .project-section > .project-container > h1 {
@@ -256,6 +258,7 @@ li {
   background: #a9f1df;
   height: 98vh;
   margin: -10px 0;
+  padding-top: 80px;
 }
 
 .contact-section > .contact-container {
@@ -336,3 +339,7 @@ footer > ul {
 footer > ul > li {
   padding: 0 20px;
 }
+
+/* @media screen and (max-width: ) {
+  
+} */
