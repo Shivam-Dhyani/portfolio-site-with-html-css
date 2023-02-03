@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
+html {
+  overflow-x: hidden;
+}
+
 body {
-  margin: 10px;
+  margin: 0px;
+  padding: 0px;
   font-family: "Itim";
+  overflow-x: hidden;
 }
 
 /* Header Section */
@@ -10,10 +16,14 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: bisque;
+  position: fixed;
+  /* top: 10px; */
+  width: 100%;
 }
 
-header > h1 {
+header > a {
   margin-left: 30px;
+  /* font-size: 35px; */
 }
 ul {
   display: flex;
@@ -31,11 +41,30 @@ li {
   padding-top: 15px;
 }
 
+.mobile-navbar-btn {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.mobile-nav-icon {
+  /* display: none; */
+  width: 40px;
+  height: 40px;
+  color: #212529;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
 /* Home Section */
 .home-section {
   background: #ee9ca7;
-  height: 88vh;
-  margin: 10px 0;
+  height: 100vh;
 }
 
 .home-section > .home-container {
@@ -112,9 +141,7 @@ li {
 /* Skills Section */
 .skills-section {
   background: #c6ea8d;
-  height: 98vh;
-  margin: 10px 0;
-  padding-top: 70px;
+  height: 100vh;
 }
 
 .skills-section > .skills-container {
@@ -143,14 +170,19 @@ li {
   margin-bottom: 20px;
 }
 
-.skills-details > h1 {
-  margin-bottom: 70px;
+.skills-details {
+  padding-top: 130px !important;
+}
+
+.skills-details > .skill-title > h4 {
+  margin-bottom: 5px !important;
 }
 
 .skills-details > .parent-line {
   background-color: white;
   height: 3px;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .html-success {
@@ -199,8 +231,8 @@ li {
 .project-section {
   background: #d8b5ff;
   height: fit-content;
-  margin: 20px 0;
-  padding-top: 80px;
+
+  padding-top: 90px;
 }
 
 .project-section > .project-container > h1 {
@@ -320,6 +352,7 @@ li {
 .contact-details > div {
   margin: 30px;
 }
+
 .contact-details > div > div {
   margin: 20px;
 }
@@ -328,8 +361,12 @@ li {
 footer {
   background: #a1c4fd;
   height: 15vh;
-  margin: 10px 0;
   text-align: center;
+}
+
+footer > h1 {
+  margin-top: 0;
+  padding-top: 15px;
 }
 
 footer > ul {
@@ -339,7 +376,108 @@ footer > ul {
 footer > ul > li {
   padding: 0 20px;
 }
+/* MEDIA QUERIES*/
+@media screen and (max-width: 1150) {
+  .form > div > input,
+  .form > div > textarea {
+    width: 400px;
+  }
+}
 
-/* @media screen and (max-width: ) {
-  
-} */
+@media screen and (max-width: 800px) {
+  .mobile-navbar-btn {
+    display: flex;
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  header {
+    position: relative;
+  }
+
+  header > h1 {
+    width: 40%;
+  }
+
+  header > ul {
+    /* display: none; */
+    width: 100%;
+    height: 100vh;
+    margin-top: -10px;
+    background-color: #e7f5ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  header > ul > a {
+    margin: 20px;
+    font-size: 30px;
+  }
+
+  .active > ul {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active > .mobile-navbar-btn > .mobile-nav-icon[name="close-outline"] {
+    display: flex;
+  }
+
+  .active > .mobile-navbar-btn > .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  button {
+    padding: 5px !important;
+    font-size: 15px !important;
+    width: 80px !important;
+  }
+  .personal-details > div > a {
+    margin: 0 5px !important;
+  }
+
+  .skills-container > .skills-content > h1 {
+    font-size: 50px;
+  }
+
+  /* .form > div > input,
+  .form > div > textarea {
+    width: 300px;
+    padding: 5px;
+  } */
+
+  .contact-section {
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  header {
+    padding: 0 24px;
+  }
+
+  /* .form > div > input,
+  .form > div > textarea {
+    width: 200px !important;
+  } */
+
+  .contact-section > .contact-container > div {
+    padding: 0px;
+  }
+
+  .contact-details > div {
+    margin: 0;
+  }
+}

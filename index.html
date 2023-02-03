@@ -11,13 +11,18 @@
   <body>
     <!-- HEADER SECTION -->
     <header>
-      <h1>Portfolio</h1>
+      <a href="#"><h1>Portfolio</h1></a>
       <ul>
         <a href="#"><li>Home</li></a>
         <a href="#skills"> <li>Skills</li></a>
         <a href="#projects"> <li>Projects</li></a>
         <a href="#contact"><li>Contact</li></a>
       </ul>
+
+      <div class="mobile-navbar-btn">
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+      </div>
     </header>
 
     <!-- HOME SECTION -->
@@ -59,21 +64,21 @@
         <div class="skills-content">
           <h1>Skills</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-            necessitatibus optio eum porro nostrum numquam, adipisci, ab quod,
-            provident deserunt fuga. Itaque aperiam pariatur esse adipisci ad!
-            Explicabo amet atque quod molestiae placeat aliquid, et quos ipsa
-            harum sed libero eos distinctio dolore hic unde cupiditate quasi
-            nesciunt nemo voluptate!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+            voluptas expedita non rerum iure quo, unde dolor id accusantium
+            repellat corrupti corporis, harum delectus perspiciatis incidunt
+            praesentium libero nobis deleniti cum veritatis qui eos. Qui porro
+            fugiat dolorem. Accusamus at temporibus voluptatibus minima, totam
+            cum fugiat corrupti reiciendis qui in!
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            error omnis ipsam sapiente illo necessitatibus aliquid, iure
-            reiciendis blanditiis dolores!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            aspernatur, quas distinctio suscipit consectetur totam culpa
+            repudiandae perferendis voluptatem. Saepe?
           </p>
         </div>
         <div class="skills-details">
-          <h1>Skills Details</h1>
+          <!-- <h1>Skills Details</h1> -->
 
           <div class="skill-title">
             <h4>HTML</h4>
@@ -120,7 +125,6 @@
         </div>
       </div>
     </section>
-
     <!-- PROJECT SECTION -->
     <section class="project-section" id="projects">
       <!-- <h1>Projects</h1> -->
@@ -221,7 +225,7 @@
             <div>
               <label for="">YOUR MESSAGE</label>
               <br />
-              <textarea name="" id="" cols="50" rows="15"></textarea>
+              <textarea name="" id="" rows="5"></textarea>
             </div>
             <div>
               <button type="submit">SEND</button>
@@ -261,5 +265,13 @@
       </ul>
     </footer>
     <script src="index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
