@@ -377,7 +377,7 @@ footer > ul > li {
   padding: 0 20px;
 }
 /* MEDIA QUERIES*/
-@media screen and (max-width: 1150) {
+@media screen and (max-width: 1150px) {
   .form > div > input,
   .form > div > textarea {
     width: 400px;
@@ -468,16 +468,33 @@ footer > ul > li {
     padding: 0 24px;
   }
 
-  /* .form > div > input,
-  .form > div > textarea {
+  .project-boxes > .project {
+    width: 250px;
+  }
+
+  .project > img {
     width: 200px !important;
-  } */
+    height: 150px !important;
+  }
+
+  .contact-section {
+    height: 130vh;
+  }
 
   .contact-section > .contact-container > div {
     padding: 0px;
   }
 
+  .form > div > input,
+  .form > div > textarea {
+    width: 200px !important;
+  }
+
   .contact-details > div {
     margin: 0;
+  }
+
+  footer {
+    height: 160px;
   }
 }
