@@ -231,7 +231,6 @@ li {
 .project-section {
   background: #d8b5ff;
   height: fit-content;
-
   padding-top: 90px;
 }
 
@@ -239,19 +238,21 @@ li {
   font-size: 100px;
   text-align: center;
   margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 .project-boxes {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-bottom: 30px;
 }
 
 .project-boxes > .project {
   height: fit-content;
   background-color: #c6ea8d;
   width: fit-content;
-  margin: 50px;
+  margin: 10px 10px 50px 10px;
   text-align: center;
   padding: 20px;
   border-radius: 20px;
@@ -360,7 +361,7 @@ li {
 /* Footer Section */
 footer {
   background: #a1c4fd;
-  height: 15vh;
+  height: 20vh;
   text-align: center;
 }
 
@@ -391,9 +392,9 @@ footer > ul > li {
     cursor: pointer;
   }
 
-  header {
+  /* header {
     position: relative;
-  }
+  } */
 
   header > h1 {
     width: 40%;
@@ -402,7 +403,7 @@ footer > ul > li {
   header > ul {
     /* display: none; */
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     margin-top: -10px;
     background-color: #e7f5ff;
     position: absolute;
@@ -450,13 +451,14 @@ footer > ul > li {
 
   .skills-container > .skills-content > h1 {
     font-size: 50px;
+    margin-top: 70px;
   }
 
-  /* .form > div > input,
+  .form > div > input,
   .form > div > textarea {
     width: 300px;
     padding: 5px;
-  } */
+  }
 
   .contact-section {
     height: 120vh;
@@ -475,11 +477,17 @@ footer > ul > li {
   .project > img {
     width: 200px !important;
     height: 150px !important;
+    padding: 20px 10px 10px 25px !important;
   }
 
-  .contact-section {
-    height: 130vh;
+  .project > .project-name {
+    font-size: 40px !important;
+    width: 10px !important;
   }
+
+  /* .contact-section {
+    height: 130vh;
+  } */
 
   .contact-section > .contact-container > div {
     padding: 0px;
@@ -490,8 +498,16 @@ footer > ul > li {
     width: 200px !important;
   }
 
+  .contact-section > .contact-container > .contact-details {
+    margin: 0;
+  }
+
   .contact-details > div {
     margin: 0;
+  }
+
+  .contact-details > div > div {
+    margin-left: 0;
   }
 
   footer {
